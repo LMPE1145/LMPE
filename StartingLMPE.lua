@@ -3,7 +3,7 @@ local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "提示",
     Text = "正在加载",
-    Duration = 5, 
+    Duration = 3, 
 })
 print("反挂机开启")
 		local vu = game:GetService("VirtualUser")
@@ -16,7 +16,7 @@ local OrionLib = loadstring(game:HttpGet("https://hub.gitmirror.com/https://raw.
 local Window = OrionLib:MakeWindow({Name = "LMPE脚本", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用LMPE脚本", ConfigFolder = "欢迎LMPE脚本"})
 local about = Window:MakeTab({
     Name = "脚本名称",
-    Icon = "rbxassetid://7733955793",
+    Icon = "rbxassetid://11109742737",
     PremiumOnly = false
 })
 
