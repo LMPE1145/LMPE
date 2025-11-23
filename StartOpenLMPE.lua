@@ -64,7 +64,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{Title="提示";Text="L
  
  --StartOpenUI
 local success, ui = pcall(function()
-return loadstring(game:HttpGet("https://raw.githubusercontent.com/3345179204-sudo/-/refs/heads/main/UI%E5%BA%93", true))()
+return loadstring(game:HttpGet("https://raw.githubusercontent.com/latchmod-cell/LMPE/refs/heads/main/StartOpenUI.txt"))()
 end)
 if not success then
 game:GetService("StarterGui"):SetCore("SendNotification",{Title="LMPE";Text="StartOpenUI加载失败";Icon="rbxassetid://114514";Duration=5;})
