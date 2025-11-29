@@ -287,7 +287,7 @@ local DOORS = Window:MakeTab({
 	PremiumOnly = false
 }) 
 DOORS:AddButton({
-	Name = "LMPE|DOORS",
+	Name = "LMPE Fo DOORS",
 	Callback = function()
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/latchmod-cell/LMPE/refs/heads/main/StartOpenUI.txt')))()
@@ -295,7 +295,7 @@ local Window = OrionLib:MakeWindow({IntroText = "DOORS” 脚本",Name = "“DOO
 if game.PlaceId == 6516141723 then
     OrionLib:MakeNotification({
         Name = "错误",
-        Content = "此脚本不能在大厅执行",
+        Content = "此脚本不能在大厅",
         Time = 5
     })
 end
@@ -548,20 +548,20 @@ GameTab:AddButton({
   	end    
 })
 GameTab:AddToggle({
-	Name = "自动躲避rush/ambush",
+	Name = "自动躲避Rush fo Ambush",
 	Default = false,
     Flag = "AvoidRushToggle",
     Save = true
 })
 GameTab:AddToggle({
-	Name = "取消Screech跳杀",
+	Name = "删除Screech跳杀",
 	Default = false,
     Flag = "ScreechToggle",
     Save = true
 })
 
 GameTab:AddToggle({
-	Name = "取消心跳游戏",
+	Name = "删除心跳游戏",
 	Default = false,
     Flag = "HeartbeatWin",
     Save = true
@@ -647,8 +647,8 @@ local NotificationCoroutine = coroutine.create(function()
         if inst.Name == "RushMoving" and OrionLib.Flags["MobToggle"].Value == true then
             if OrionLib.Flags["AvoidRushToggle"].Value == true then
                 OrionLib:MakeNotification({
-                    Name = "警告",
-                    Content = "躲避rush请稍等",
+                    Name = "自动躲避",
+                    Content = "正在躲避Rush请稍等...",
                     Time = 5
                 })
                 local OldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
@@ -662,16 +662,16 @@ local NotificationCoroutine = coroutine.create(function()
                 game.Players.LocalPlayer.Character:MoveTo(OldPos)
             else
                 OrionLib:MakeNotification({
-                    Name = "警告",
-                    Content = "rush已刷新",
+                    Name = "通知",
+                    Content = "Rush已刷新",
                     Time = 5
                 })
             end
         elseif inst.Name == "AmbushMoving" and OrionLib.Flags["MobToggle"].Value == true then
             if OrionLib.Flags["AvoidRushToggle"].Value == true then
                 OrionLib:MakeNotification({
-                    Name = "警告",
-                    Content = "躲避ambush请稍等",
+                    Name = "自动躲避",
+                    Content = "正在躲避Ambush请稍等...",
                     Time = 5
                 })
                 local OldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
@@ -685,8 +685,8 @@ local NotificationCoroutine = coroutine.create(function()
                 game.Players.LocalPlayer.Character:MoveTo(OldPos)
             else
                 OrionLib:MakeNotification({
-                    Name = "警告",
-                    Content = "ambush刷新",
+                    Name = "通知",
+                    Content = "Ambush已刷新",
                     Time = 5
                 })
             end
@@ -697,7 +697,7 @@ end)
 --// ok actual code ends here
 
 local CreditsTab = Window:MakeTab({
-	Name = "我的",
+	Name = "关于",
 	Icon = "LMPE",
 	PremiumOnly = false
 })
@@ -724,3 +724,4 @@ end
 })
 
 print("创建分类(DOORS-DOORS)")
+
