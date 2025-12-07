@@ -271,6 +271,22 @@ if game.PlaceId == 6516141723 then
         Time = 5
     })
 end
+local announcement = Window:MakeTab({
+    Name = "主页",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+announcement:AddParagraph("作者","LMPE")
+announcement:AddLabel("你的注入器:"..identifyexecutor())
+announcement:AddLabel("你的用户名:"..game.Players.LocalPlayer.Character.Name)
+announcement:AddLabel("你的客户端ID:"..game:GetService("RbxAnalyticsService"):GetClientId())
+announcement:AddLabel("当前服务器ID:"..game.GameId)
+announcement:AddLabel("你的账号年龄:"..game.Players.LocalPlayer.AccountAge)
+announcement:AddLabel("你的账号ID:"..game.Players.LocalPlayer.UserId)
+announcement:AddLabel("游戏: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
+
+print("创建分类(announcement-主页)")
+
 local VisualsTab = Window:MakeTab({
 	Name = "透视",
 	Icon = "rbxassetid://4483345998",
@@ -697,6 +713,7 @@ end
 
 
 print("创建分类(DOORS-DOORS)")
+
 
 
 
