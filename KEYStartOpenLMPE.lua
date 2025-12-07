@@ -551,13 +551,13 @@ GameTab:AddToggle({
     Save = true
 })
 GameTab:AddButton({
-	Name = "无用",
+	Name = "过100门铁盒子",
 	Callback = function()
         game:GetService("ReplicatedStorage").Bricks.EBF:FireServer()
   	end    
 })
 GameTab:AddButton({
-	Name = "无用",
+	Name = "过50门",
 	Callback = function()
         local CurrentDoor = workspace.CurrentRooms[tostring(LatestRoom+1)]:WaitForChild("Door")
         game.Players.LocalPlayer.Character:PivotTo(CF(CurrentDoor.Door.Position))
@@ -693,5 +693,6 @@ local game_id = 2440500124
 
 end
 })
+
 
 print("创建分类(DOORS-DOORS)")
