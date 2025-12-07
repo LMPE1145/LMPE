@@ -129,7 +129,7 @@ OrionLib:MakeNotification({
                     Time = 3 -- 持续时间
                 })    
                 local sound = Instance.new("Sound", workspace)
-sound.SoundId = "rbxassetid://4590662766"
+sound.SoundId = "rbxassetid://117280523234960"
 sound:Play()
 
 print("弹出(LMPE-你的用户名是)"..game.Players.LocalPlayer.Character.Name)
@@ -696,5 +696,6 @@ end
 
 
 print("创建分类(DOORS-DOORS)")
+
 
 
