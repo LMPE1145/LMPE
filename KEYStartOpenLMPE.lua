@@ -550,7 +550,7 @@ GameTab:AddToggle({
     Flag = "MobToggle" ,
     Save = true
 })
-GameTab:AddToggle({
+GameTab:AddButton({
 	Name = "过100门铁盒子",
 	Callback = function()
         game:GetService("ReplicatedStorage").Bricks.EBF:FireServer()
@@ -696,4 +696,5 @@ end
 
 
 print("创建分类(DOORS-DOORS)")
+
 
