@@ -197,25 +197,6 @@ currency:AddToggle({
     end
     print("执行切换/预加载(夜视)")
 	end
-})
-currency:AddToggle({
-	Name = "飞行(自制)",
-	Default = false,
-	Callback = function(Value)
-    if Value then
-	    loadstring(game:HttpGet("https://pastebin.com/raw/Z0VsZaHD"))()
-    else
-	    loadstring(game:HttpGet("https://pastebin.com/raw/gWczAK6H"))()
-    end
-        print("执行切换/预加载(飞行(自制))")
-	end
-})
-currency:AddButton({
-	Name = "高级脚本(K键切换)",
-	Callback = function()
-print("执行(高级脚本(K键切换)")
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))()
-end
 })   
 currency:AddButton({
 	Name = "飞行V3",
@@ -271,7 +252,7 @@ if game.PlaceId == 6516141723 then
     })
 end
 local VisualsTab = Window:MakeTab({
-	Name = "透视",
+	Name = "ESP",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -281,7 +262,7 @@ local LatestRoom = game:GetService("ReplicatedStorage").GameData.LatestRoom
 
 local KeyChams = {}
 VisualsTab:AddToggle({
-	Name = "钥匙透视",
+	Name = "钥匙ESP",
 	Default = false,
     Flag = "KeyToggle",
     Save = true,
@@ -322,7 +303,7 @@ coroutine.resume(KeyCoroutine)
 
 local BookChams = {}
 VisualsTab:AddToggle({
-	Name = "50关书透视",
+	Name = "50关书ESPBUG",
 	Default = false,
     Flag = "BookToggle",
     Save = true,
@@ -335,7 +316,7 @@ VisualsTab:AddToggle({
 
 local FigureChams = {}
 VisualsTab:AddToggle({
-	Name = "50关Figure透视",
+	Name = "50关FigureESP",
 	Default = false,
     Flag = "FigureToggle",
     Save = true,
