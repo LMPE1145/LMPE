@@ -371,6 +371,8 @@ local EntityCoroutine = coroutine.create(function()
     table.insert(FigureChams,ApplyEntityChams(Entity))
 end)
 
+
+
 local GameTab = Window:MakeTab({
 	Name = "主要功能",
 	Icon = "rbxassetid://4483345998",
