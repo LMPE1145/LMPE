@@ -561,3 +561,7 @@ local about = UITab3:section("『LMPE-DOORS』",true)
 about:Button("LMPE-LMPE脚本", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/latchmod-cell/LMPE/refs/heads/main/LMPE-DOORS.lua"))()
 end)
+
+about:Button("LMHUB脚本", function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/latchmod-cell/LMPE/refs/heads/main/LMHUB.lua"))()
+end)
